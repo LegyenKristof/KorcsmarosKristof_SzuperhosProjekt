@@ -20,5 +20,13 @@ public class Main {
 
         System.out.println(b1);
         System.out.println(b2);
+
+        Vasember v1 = new Vasember();
+
+        for (int i = 0; i < 100; i++){
+            v1.kutyutKeszit();
+        }
+        System.out.println(v1);
+        System.out.println(v1.megmentiAVilagot());
     }
 }
