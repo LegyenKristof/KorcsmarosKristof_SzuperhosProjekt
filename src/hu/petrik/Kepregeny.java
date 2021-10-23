@@ -64,7 +64,7 @@ public class Kepregeny {
     }
 
     public static void main(){
-        szereplok("szereplok.txt");
+        szereplok("szuperhos.txt");
         szuperhosok();
     }
 
