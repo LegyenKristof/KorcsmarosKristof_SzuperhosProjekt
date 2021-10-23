@@ -3,7 +3,7 @@ package hu.petrik;
 public class Main {
 
     public static void main(String[] args) {
-        Bosszuallo b1 = new Bosszuallo(400, true) {
+        /*Bosszuallo b1 = new Bosszuallo(600, true) {
             @Override
             public boolean megmentiAVilagot() {
                 return false;
@@ -30,7 +30,10 @@ public class Main {
         System.out.println(v1.megmentiAVilagot());
 
         Batman bm1 = new Batman();
+        bm1.kutyutKeszit();
         System.out.println(bm1);
-        System.out.println(b1.legyoziE(bm1));
+        System.out.println(b1.legyoziE(bm1));*/
+
+        Kepregeny.main();
     }
 }
