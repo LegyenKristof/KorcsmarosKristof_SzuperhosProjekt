@@ -14,12 +14,12 @@ public abstract class Bosszuallo implements Szuperhos{
     @Override
     public boolean legyoziE(Szuperhos szuperhos) {
         boolean legyozi = false;
-        if (szuperhos.mekkoraAzEreje() > this.szuperero && this.vanEGyengesege && szuperhos instanceof Bosszuallo){
+        if (szuperhos instanceof Bosszuallo && ((Bosszuallo) szuperhos).isVanEGyengesege() && this.szuperero > szuperhos.mekkoraAzEreje()){
             legyozi = true;
         }
-        /*if (szuperhos.mekkoraAzEreje() >= this.szuperero && szuperhos instanceof Batman){
+        if (szuperhos instanceof Batman && this.szuperero >= szuperhos.mekkoraAzEreje() * 2){
             legyozi = true;
-        }*/
+        }
         return legyozi;
     }
 
